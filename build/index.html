@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/bitrisecihelper/_app/start-8a7973a3.js">
+		<link rel="modulepreload" href="/bitrisecihelper/_app/chunks/vendor-003ab2a2.js">
+		<link rel="modulepreload" href="/bitrisecihelper/_app/pages/__layout.svelte-5ed0901e.js">
+		<link rel="modulepreload" href="/bitrisecihelper/_app/pages/index.svelte-28f0dbfe.js">
+		<link rel="stylesheet" href="/bitrisecihelper/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/bitrisecihelper/_app/assets/pages/__layout.svelte-6832be30.css">
+
+		<script type="module">
+			import { start } from "/bitrisecihelper/_app/start-8a7973a3.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/bitrisecihelper","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/bitrisecihelper/_app/pages/__layout.svelte-5ed0901e.js"),
+						import("/bitrisecihelper/_app/pages/index.svelte-28f0dbfe.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main><h1>Bitrise CI API Helper</h1>
+    <p>User Friendly</p>
+    <textarea name="Text1" cols="40" rows="5"></textarea>
+    <p>CI Friendly</p>
+    <textarea name="Text1" cols="40" rows="5"></textarea></main>
+
+
+
+			
+		</div>
+	</body>
+</html>
