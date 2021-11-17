@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    const regex = /([\n\s]+)/gm;
+
+    let valueUserFriendly = "";
+    $: valueCiFriendly = valueUserFriendly
+        .replace("\"", "\\\"")
+        .replace(regex, "");
+</script>
+
+<main>
+    <h1>Bitrise CI API Helper</h1>
+    <p>User Friendly</p>
+    <textarea bind:value={valueUserFriendly} name="Text1" cols="40" rows="5"></textarea>
+    <p>CI Friendly</p>
+    <textarea bind:value={valueCiFriendly} name="Text1" cols="40" rows="5"></textarea>
+</main>
